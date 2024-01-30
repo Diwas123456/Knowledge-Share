@@ -23,7 +23,7 @@
   --card-border-radius-2: 0.5rem;
   --card-border-radius-3: 0.8rem;
   --card-border-radius-4: 2rem;
-  --card-border-radius-5: 5rem;
+  --card-border-radius-5: 2rem;
 }
 
 * {
@@ -200,6 +200,12 @@ nav button {
   border: 1rem solid var(--color-gray-900);
   overflow: hidden;
   margin-bottom: 1.6rem;
+  height: 250px;
+}
+
+.post__thumbnail img {
+  height: auto;
+  width: 100%;
 }
 
 .post:hover .post__thumbnail img {

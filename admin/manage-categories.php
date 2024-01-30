@@ -56,6 +56,16 @@ $categories = mysqli_query($connection, $query);
   ?>
 </p>
 </div>
+
+<?php elseif(isset($_SESSION['catecory-delete-no'])) :
+    ?>
+<div class="alert__message error container" style="text-align: center;">
+  <p>
+  <?= $_SESSION['catecory-delete-no'];
+  unset($_SESSION['catecory-delete-no']);
+  ?>
+</p>
+</div>
 <?php endif ?>
 
 
